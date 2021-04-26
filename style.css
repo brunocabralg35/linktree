@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color: rgb(32, 32, 32);
+  --textColor: white;
+  --textButton: black;
+  --bgButton: white;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--textColor);
+  font-family: "Righteous", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 55vw;
+  max-width: 55vw;
+  margin: auto;
+}
+
+.avatar {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  box-sizing: border-box;
+  border: 2px solid var(--bgButton);
+}
+
+.text {
+  margin-bottom: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.logoM {
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 7px;
+}
+
+.links {
+  margin: auto;
+  text-align: center;
+  min-width: 90%;
+}
+
+.links li {
+  list-style: none;
+  background-color: var(--bgButton);
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--bgButton);
+}
+
+.links li:hover {
+  background-color: transparent;
+  border: 2px solid var(--bgButton);
+  color: var(--textColor);
+}
+
+a {
+  text-decoration: none;
+  color: var(--textButton);
+}
+
+i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.mb {
+  margin-bottom: 12px;
+}
